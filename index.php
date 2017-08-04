@@ -11,7 +11,7 @@
 	<div class="row">
 			<div class="col-md-4"></div>
 	 		<div class="col-md-2 text-center">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSellingForm">Sell New Car</a>
+            <a href="#" id="newCarButton" class="btn btn-primary">Sell New Car</a>
         </div>
         <div class="col-md-2 text-center">
             <a href="#" class="btn btn-primary">Search For Cars</a>

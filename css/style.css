@@ -104,3 +104,9 @@ a:hover {
 	margin: 0 !important;
 	padding: 0;
 }
+
+.fire-effect {
+	background-image: url('../img/fire.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
