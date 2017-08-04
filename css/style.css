@@ -1,0 +1,106 @@
+.body-background {
+	background-image: url('../img/bg.jpg');
+	font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.home-page-wrapper{
+	padding-top: 15px;
+	vertical-align: middle;
+	padding-bottom: 2em;
+}
+
+#success-message{
+	display:none;
+}
+
+.heading {
+	padding-top: 2px;
+	margin-bottom: 30px;
+}
+
+.row-form {
+	background-color: transparent;
+}
+
+.btn-login {
+	margin-top: 15px;
+}
+
+
+.add-filter-buttons {
+	text-align: center;
+}
+
+.table-responsive{
+	margin-bottom: 40px;
+}
+
+thead {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+i.fa {
+    padding-right: 10px;
+}
+
+
+a:link, a:visited {
+    color: #dd5638;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #c9302c;
+}
+
+.dashboard-container {
+	
+	background: url('../img/tile.jpg') top left repeat;
+	margin-top: 50px;
+
+}
+
+.dashboard-heading {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	background-color: #3e4249;
+	color: white;
+}
+
+.transaction-value {
+	font-family: 'Arial';
+	font-size: 16px;
+	font-style: normal;
+}
+
+.view-detail-button {
+	font-size: 11px !important;
+}
+
+
+@media screen and (max-width : 568px) {
+	.dashboard-container {
+		margin-right: 30px;
+		margin-top: -50px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.add-filter-buttons {
+	text-align: right;
+	}
+}
+
+.form-validation-message {
+	color: red;
+	font-size: 12px;
+}
+
+.modal-header .title {
+	margin: 0 !important;
+	padding: 0;
+}
