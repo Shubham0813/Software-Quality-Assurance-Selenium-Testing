@@ -1,5 +1,11 @@
+html,body {
+	height: 100%;
+}
+
 .body-background {
 	background-image: url('../img/bg.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;	
 	font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 16px;
     color: #000000;
@@ -109,4 +115,18 @@ a:hover {
 	background-image: url('../img/fire.gif');
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0;
+}
+
+.formValidationError {
+	color: red;
+	font-size: 13px;
 }
