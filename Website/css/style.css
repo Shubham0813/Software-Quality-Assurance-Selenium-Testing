@@ -130,3 +130,7 @@ a:hover {
 	color: red;
 	font-size: 13px;
 }
+
+#url-jd {
+	display: none;
+}

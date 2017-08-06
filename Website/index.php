@@ -32,12 +32,15 @@
             </div>
 
             <div class="modal-body mb-0">
+                <div class="alert alert-success text-center" role="alert" id="url-jd">
+                  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+                </div>
                 <form id="sellingForm">
                     <div class="md-form form-sm">
                         <i class="fa fa-envelope prefix"></i>
-                        <input type="text" id="form1" class="form-control" 
+                        <input type="text" id="form1" class="form-control" value="abc" 
                             onkeyup="validateName(this.value)">
-                        <label for="form1">Name</label>
+                        <label for="form1">Seller Name</label>
                         <div class="text-center">
                             <span class="formValidationError" id="form1Error"></span>
                         </div>
@@ -45,7 +48,7 @@
 
                     <div class="md-form form-sm">
                         <i class="fa fa-lock prefix"></i>
-                        <input type="text" id="form2" class="form-control"
+                        <input type="text" id="form2" class="form-control" value = "12, 123 ab cd"
                             onkeyup="validateAddress(this.value)">
                         <label for="form2">Address</label>
                         <div class="text-center">
@@ -55,7 +58,7 @@
 
                     <div class="md-form form-sm">
                         <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="form3" class="form-control"
+                        <input type="text" id="form3" class="form-control" value = "ab"
                             onkeyup="validateCity(this.value)">
                         <label for="form3">City</label>
                         <div class="text-center">
@@ -66,7 +69,7 @@
 
                     <div class="md-form form-sm">
                         <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="form4" class="form-control"
+                        <input type="text" id="form4" class="form-control" value = "123-123-1234"
                             onkeyup="validatePhoneNumber(this.value)">
                         <label for="form4">Phone Number</label>
                         <div class="text-center">
@@ -77,7 +80,7 @@
 
                     <div class="md-form form-sm">
                         <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="form5" class="form-control"
+                        <input type="text" id="form5" class="form-control" value = "a@b.com"
                             onkeyup="validateEmail(this.value)">
                         <label for="form5">Email</label>
                         <div class="text-center">
@@ -88,7 +91,7 @@
 
                     <div class="md-form form-sm">
                         <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="form6" class="form-control"
+                        <input type="text" id="form6" class="form-control" value ="2012 Ford Mustang"
                             placeholder="2012 Ford Mustang" 
                             onkeyup="validateVehicleInfo(this.value)">                        
                         <label for="form6">Vehicle (Year Make Model)</label>
@@ -113,7 +116,6 @@
                         <button class="btn btn-info mb-2">Save <i class="fa fa-send ml-1"></i></button>
                     </div>
                 </form>
-                <div class="text-center">URL</div>
             </div>
         </div>
     </div>

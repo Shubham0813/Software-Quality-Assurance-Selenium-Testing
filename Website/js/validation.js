@@ -20,9 +20,9 @@ function validateSellingForm() {
 		var emailIDOk = validateEmail(getValue("form5"));
 		var vehicleOk = validateVehicleInfo(getValue("form6"));
 	
-		if(nameOk && addressOk && cityOk && phoneNumberOk && emailIDOk && vehicleOk) {
-			alert("Success");
-		}
+		//if(nameOk && addressOk && cityOk && phoneNumberOk && emailIDOk && vehicleOk) {
+			saveFormData();
+		//}
 	});
 }
 
@@ -123,4 +123,41 @@ function getElement(elementId) {
 function setValueOf(elementId, content) {
 	var element = getElement(elementId);
 	element.innerHTML = content;
+}
+
+function saveFormData() {
+	var xmlhttp = new XMLHttpRequest();	
+	
+	var name = getValue("form1");
+	var address = getValue("form2");
+	var city = getValue("form3");
+	var phoneNumber = getValue("form4");
+	var emailID = getValue("form5");
+
+	var vehicleInfo = getValue("form6").split(" ");
+
+	var year =  vehicleInfo[0];
+	var make = vehicleInfo[1];
+	var model = vehicleInfo[2];
+
+	var values = "name="+ name + "&address=" + address + "&city=" + city + "&phoneNumber=" + phoneNumber +
+					"&emailID=" + emailID + "&year=" + year + "&make=" + make + "&model=" + model;
+	
+	xmlhttp.open("POST", "db/savePosting.php", true);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.onreadystatechange = function() {
+	    if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	    	if(xmlhttp.responseText == 1) {
+	    		var url = "http://www.jdpower.com/cars/" + make + "/" + model + "/" + year;
+				var urlDiv = getElement("url-jd");
+				urlDiv.innerHTML = "Ad posted successfully" + "\n" + 
+									"<a target='_blank' href=" + url + ">" + url + " </a>";
+	    	
+				urlDiv.style.display = 'block';
+			} else {
+	    		alert("Error: Cannot generate URL");
+	    	}
+	    }
+	}
+	xmlhttp.send(values);
 }
