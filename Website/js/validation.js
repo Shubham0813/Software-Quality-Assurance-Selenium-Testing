@@ -154,6 +154,9 @@ function saveFormData() {
 									"<a target='_blank' href=" + url + ">" + url + " </a>";
 	    	
 				urlDiv.style.display = 'block';
+
+				var form = getElement("sellingForm");
+				form.reset();
 			} else {
 	    		alert("Error: Cannot generate URL");
 	    	}
