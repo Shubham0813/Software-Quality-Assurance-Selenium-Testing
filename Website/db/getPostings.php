@@ -3,7 +3,7 @@
 
 	$output = "";
 
-	$query = "SELECT * FROM Postings";
+	$query = "SELECT * FROM Postings ORDER BY ID DESC";
 	$results=mysqli_query($conn,$query);
 
   $count = 1;

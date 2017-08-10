@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1004]C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll</TopNode>
-  <SelectedNode>[0-1003]SeleniumProjectForSellMyCar.com.Tests.SellMyCar_ClickOnSellNewCar_SellingFormModalOpens</SelectedNode>
+  <TopNode>[0-1008]C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll</TopNode>
+  <SelectedNode>[0-1008]C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1004]C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll" Expanded="true" />
-    <Node UniqueName="[0-1005]SeleniumProjectForSellMyCar" Expanded="true" />
-    <Node UniqueName="[0-1006]SeleniumProjectForSellMyCar.com" Expanded="true" />
+    <Node UniqueName="[0-1008]C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll" Expanded="true" />
+    <Node UniqueName="[0-1009]SeleniumProjectForSellMyCar" Expanded="true" />
+    <Node UniqueName="[0-1010]SeleniumProjectForSellMyCar.com" Expanded="true" />
     <Node UniqueName="[0-1000]SeleniumProjectForSellMyCar.com.Tests" Expanded="true" />
   </Nodes>
 </VisualState>

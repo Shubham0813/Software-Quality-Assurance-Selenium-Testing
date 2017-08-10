@@ -20,9 +20,13 @@ function validateSellingForm() {
 		var emailIDOk = validateEmail(getValue("form5"));
 		var vehicleOk = validateVehicleInfo(getValue("form6"));
 	
-		//if(nameOk && addressOk && cityOk && phoneNumberOk && emailIDOk && vehicleOk) {
+		if(nameOk && addressOk && cityOk && phoneNumberOk && emailIDOk && vehicleOk) {
 			saveFormData();
-		//}
+		} {
+			var urlDiv = getElement("url-jd");
+			urlDiv.innerHTML = "Please fill all fields before submitting form";
+			urlDiv.style.display = 'block';
+		}
 	});
 }
 
@@ -64,12 +68,13 @@ function validateCity(city) {
 
 function validatePhoneNumber(city) {
 	var regExpNumber1 = new RegExp("^[0-9]{3}-[0-9]{3}-[0-9]{4}$");
-	var regExpNumber2 = new RegExp("^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$");
+	var regExpNumber2 = new RegExp("^\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}$");
 	
 	if(!regExpNumber1.test(city.trim())) {
-		if(!regExpNumber2.test(city.trim()))
-		setValueOf("form4Error", "Please enter number in correct format: 123-123-1234 or (123) 123-1234");
-		return false;
+		if(!regExpNumber2.test(city.trim())) {
+			setValueOf("form4Error", "Please enter number in correct format: 123-123-1234 or (123) 123-1234");
+			return false;
+		}
 	}
 
 	setValueOf("form4Error", "");
@@ -150,13 +155,19 @@ function saveFormData() {
 	    	if(xmlhttp.responseText == 1) {
 	    		var url = "http://www.jdpower.com/cars/" + make + "/" + model + "/" + year;
 				var urlDiv = getElement("url-jd");
-				urlDiv.innerHTML = "Ad posted successfully" + "\n" + 
-									"<a target='_blank' href=" + url + ">" + url + " </a>";
+				urlDiv.innerHTML = "Ad posted successfully" + "<br/>" + 
+									"Seller's Name: " + name + "<br/>" + 
+									"Address: " + address + "<br/>" + 
+									"City: " + city + "<br/>" + 
+									"Phone Number: " + phoneNumber + "<br/>" +
+									"Email: " + emailID + "<br/>" +
+									"<a id='url' target='_blank' href=" + url + ">" + url + " </a>";
 	    	
 				urlDiv.style.display = 'block';
 
 				var form = getElement("sellingForm");
 				form.reset();
+				form.style.display = 'none';
 			} else {
 	    		alert("Error: Cannot generate URL");
 	    	}

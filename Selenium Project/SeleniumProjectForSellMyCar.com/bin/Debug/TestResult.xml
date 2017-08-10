@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-08-06" time="23:42:46">
-  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8784" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="LAPTOP-4MVH3MJ8" user="Shubham" user-domain="LAPTOP-4MVH3MJ8" />
+<test-results name="C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-08-10" time="15:17:02">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8794" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="LAPTOP-4MVH3MJ8" user="Shubham" user-domain="LAPTOP-4MVH3MJ8" />
   <culture-info current-culture="en-CA" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll" executed="True" result="Success" success="True" time="9.796" asserts="0">
+  <test-suite type="Assembly" name="C:\xampp\htdocs\QA4\Selenium Project\SeleniumProjectForSellMyCar.com\bin\Debug\SeleniumProjectForSellMyCar.com.dll" executed="True" result="Success" success="True" time="11.935" asserts="0">
     <results>
-      <test-suite type="Namespace" name="SeleniumProjectForSellMyCar" executed="True" result="Success" success="True" time="9.771" asserts="0">
+      <test-suite type="Namespace" name="SeleniumProjectForSellMyCar" executed="True" result="Success" success="True" time="11.934" asserts="0">
         <results>
-          <test-suite type="Namespace" name="com" executed="True" result="Success" success="True" time="9.771" asserts="0">
+          <test-suite type="Namespace" name="com" executed="True" result="Success" success="True" time="11.933" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="Tests" executed="True" result="Success" success="True" time="9.763" asserts="0">
+              <test-suite type="TestFixture" name="Tests" executed="True" result="Success" success="True" time="11.931" asserts="0">
                 <results>
-                  <test-case name="SeleniumProjectForSellMyCar.com.Tests.SellMyCar_ClickOnSellNewCar_SellingFormModalOpens" executed="True" result="Success" success="True" time="9.735" asserts="0" />
+                  <test-case name="SeleniumProjectForSellMyCar.com.Tests.SellMyCar_ClickOnSellNewCar_SellingFormModalOpens" executed="True" result="Success" success="True" time="11.925" asserts="0" />
                 </results>
               </test-suite>
             </results>
